@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "545480137356",
+    "firebase_url": "https://clusteroids-e10d0-default-rtdb.firebaseio.com",
+    "project_id": "clusteroids-e10d0",
+    "storage_bucket": "clusteroids-e10d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545480137356:android:104e9f955fee2b841039a9",
+        "android_client_info": {
+          "package_name": "com.example.clusteroids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545480137356-l1c7cf5da0lnk9sfan194i5atmvq9fec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clusteroids",
+            "certificate_hash": "f7a05a5f8cbf25c02b8df21574180e5b56302edc"
+          }
+        },
+        {
+          "client_id": "545480137356-01tuvm46rg2rdqn1b0sip8sdo2gf95is.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxSEIUZlfYAAa_CMAztkTSAEDeJ0po8-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545480137356-01tuvm46rg2rdqn1b0sip8sdo2gf95is.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "545480137356-iltbnns9cgvm8br6k4dunlf1akuf4lo4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.clusteroids"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
