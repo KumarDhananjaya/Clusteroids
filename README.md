@@ -1,7 +1,4 @@
-# clusteroids
-
-A new Flutter project.
-
+# Clusteroids
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -33,27 +30,30 @@ This project is licensed under the MIT License.
 Make sure to replace `your-username` and `your-flutter-app` with the appropriate values based on your project's repository URL. You can also customize the content and instructions to match your specific app.
 ### Installation
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
 ```shell
 git clone https://github.com/KumarDhananjaya/Clusteroids.git
+```
 
 Navigate to the project directory:
-
+```shell
 cd your-flutter-app
+```
 
 Install the required dependencies: 
-
+```shell
 flutter pub get
+```
 
 Connect your device or start the emulator.
 
 Running the App
 
 Use the following command to run the app:
-
+```shell
 flutter run
-
+```
 This command will build the app and deploy it to your connected device or emulator.
 
 
