@@ -48,7 +48,7 @@ flutter pub get
 
 Connect your device or start the emulator.
 
-Running the App
+## Running the App
 
 Use the following command to run the app:
 ```shell
