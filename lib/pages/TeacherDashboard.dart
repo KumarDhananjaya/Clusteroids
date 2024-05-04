@@ -450,7 +450,7 @@ class _NotesState extends State<Notes> {
                 onPressed: addNote,
                 child: Text('Add Notes'),
                 style: ElevatedButton.styleFrom(
-                  primary: Theme.of(context).accentColor,
+                  backgroundColor: Colors.tealAccent,
                   // Use the app theme's accent color
                 ),
               ),

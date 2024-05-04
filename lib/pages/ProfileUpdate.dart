@@ -21,7 +21,7 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
   final picker = ImagePicker();
 
   Future pickImage() async {
-    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     setState(() {
       if (pickedFile != null) {
         _image = File(pickedFile.path);
@@ -160,7 +160,7 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
               SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purpleAccent,
+                  backgroundColor: Colors.purpleAccent,
                 ),
                 onPressed: updateProfile,
                 child: Text('Update'),
@@ -168,7 +168,7 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
               SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purpleAccent,
+                  backgroundColor: Colors.purpleAccent,
                 ),
                 onPressed: pickImage,
                 child: Text('Choose Profile Picture'),

@@ -104,7 +104,7 @@ class _ProfilePageState extends State<ProfilePage>{
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: <Color>[Theme.of(context).primaryColor, Theme.of(context).accentColor,]
+                  colors: <Color>[Theme.of(context).primaryColor, Colors.tealAccent,]
               )
           ),
         ),
@@ -137,7 +137,7 @@ class _ProfilePageState extends State<ProfilePage>{
                   stops: [0.0, 1.0],
                   colors: [
                     Theme.of(context).primaryColor.withOpacity(0.2),
-                    Theme.of(context).accentColor.withOpacity(0.5),
+                    Colors.tealAccent.withOpacity(0.5),
                   ]
               )
           ) ,
@@ -150,7 +150,7 @@ class _ProfilePageState extends State<ProfilePage>{
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     stops: [0.0, 1.0],
-                    colors: [ Theme.of(context).primaryColor,Theme.of(context).accentColor,],
+                    colors: [ Theme.of(context).primaryColor,Colors.tealAccent,],
                   ),
                 ),
                 child: Container(
@@ -163,8 +163,8 @@ class _ProfilePageState extends State<ProfilePage>{
 
               Divider(color: Theme.of(context).primaryColor, height: 1,),
               ListTile(
-                leading: Icon(Icons.dashboard, size: _drawerIconSize,color: Theme.of(context).accentColor,),
-                title: Text('Dashboard',style: TextStyle(fontSize: _drawerFontSize,color: Theme.of(context).accentColor),),
+                leading: Icon(Icons.dashboard, size: _drawerIconSize,color: Colors.tealAccent,),
+                title: Text('Dashboard',style: TextStyle(fontSize: _drawerFontSize,color: Colors.tealAccent),),
                 onTap: () {
                   Navigator.push( context, MaterialPageRoute(builder: (context) => StudentDashboard()), );
 
@@ -172,8 +172,8 @@ class _ProfilePageState extends State<ProfilePage>{
               ),
               Divider(color: Theme.of(context).primaryColor, height: 1,),
               ListTile(
-                leading: Icon(Icons.face, size: _drawerIconSize,color: Theme.of(context).accentColor,),
-                title: Text('Profile',style: TextStyle(fontSize: _drawerFontSize,color: Theme.of(context).accentColor),),
+                leading: Icon(Icons.face, size: _drawerIconSize,color: Colors.tealAccent,),
+                title: Text('Profile',style: TextStyle(fontSize: _drawerFontSize,color: Colors.tealAccent),),
                 onTap: () {
                   Navigator.push( context, MaterialPageRoute(builder: (context) => ProfilePage()), );
 
@@ -181,8 +181,8 @@ class _ProfilePageState extends State<ProfilePage>{
               ),
               Divider(color: Theme.of(context).primaryColor, height: 1,),
               ListTile(
-                leading: Icon(Icons.update, size: _drawerIconSize,color: Theme.of(context).accentColor,),
-                title: Text('Update Details',style: TextStyle(fontSize: _drawerFontSize,color: Theme.of(context).accentColor),),
+                leading: Icon(Icons.update, size: _drawerIconSize,color: Colors.tealAccent,),
+                title: Text('Update Details',style: TextStyle(fontSize: _drawerFontSize,color: Colors.tealAccent),),
                 onTap: () {
                   Navigator.push( context, MaterialPageRoute(builder: (context) => ProfileUpdate()), );
                 },
@@ -196,13 +196,13 @@ class _ProfilePageState extends State<ProfilePage>{
                 leading: Icon(
                   Icons.request_page,
                   size: _drawerIconSize,
-                  color: Theme.of(context).accentColor,
+                  color: Colors.tealAccent,
                 ),
                 title: Text(
                   'Request Leave',
                   style: TextStyle(
                     fontSize: _drawerFontSize,
-                    color: Theme.of(context).accentColor,
+                    color: Colors.tealAccent,
                   ),
                 ),
                 onTap: () {
@@ -218,13 +218,13 @@ class _ProfilePageState extends State<ProfilePage>{
                 leading: Icon(
                   Icons.list,
                   size: _drawerIconSize,
-                  color: Theme.of(context).accentColor,
+                  color: Colors.tealAccent,
                 ),
                 title: Text(
                   'View Requests',
                   style: TextStyle(
                     fontSize: _drawerFontSize,
-                    color: Theme.of(context).accentColor,
+                    color: Colors.tealAccent,
                   ),
                 ),
                 onTap: () {
@@ -234,8 +234,8 @@ class _ProfilePageState extends State<ProfilePage>{
 
               Divider(color: Theme.of(context).primaryColor, height: 1,),
               ListTile(
-                leading: Icon(Icons.logout, size: _drawerIconSize,color: Theme.of(context).accentColor,),
-                title: Text('Logout',style: TextStyle(fontSize: _drawerFontSize,color: Theme.of(context).accentColor),),
+                leading: Icon(Icons.logout, size: _drawerIconSize,color: Colors.tealAccent,),
+                title: Text('Logout',style: TextStyle(fontSize: _drawerFontSize,color: Colors.tealAccent),),
                 onTap: logout,
               ),
             ],

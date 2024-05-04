@@ -270,8 +270,8 @@ class _FeesState extends State<Fees> {
                   updateFeeStatus();
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
-                  onPrimary: Colors.white,
+                  backgroundColor: Colors.purple,
+                  foregroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 32),
                 ),
                 child: Text('Paid'),
@@ -285,8 +285,8 @@ class _FeesState extends State<Fees> {
                   updateFeeStatus();
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
-                  onPrimary: Colors.white,
+                  backgroundColor: Colors.purple,
+                  foregroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 32),
                 ),
                 child: Text('Unpaid'),

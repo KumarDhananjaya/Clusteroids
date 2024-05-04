@@ -17,7 +17,7 @@ class _AddEventPageState extends State<AddEventPage> {
 
   Future<void> _pickImage(ImageSource source) async {
     final picker = ImagePicker();
-    final pickedImage = await picker.getImage(source: source);
+    final pickedImage = await picker.pickImage(source: source);
 
     if (pickedImage != null) {
       setState(() {
@@ -25,6 +25,7 @@ class _AddEventPageState extends State<AddEventPage> {
       });
     }
   }
+
 
   Future<void> _uploadEvent() async {
     setState(() {
@@ -139,7 +140,7 @@ class _AddEventPageState extends State<AddEventPage> {
             ElevatedButton(
               onPressed: _isUploading ? null : _uploadEvent,
               style: ElevatedButton.styleFrom(
-                primary: Colors.purple,
+                backgroundColor: Colors.purple,
                 padding: EdgeInsets.all(16.0),
               ),
               child: _isUploading ? CircularProgressIndicator() : Text('Add Event'),

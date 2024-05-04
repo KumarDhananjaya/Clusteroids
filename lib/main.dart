@@ -12,7 +12,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await FirebaseAppCheck.instance.activate(
-    webRecaptchaSiteKey: 'recaptcha-v3-site-key',
+    webProvider: ReCaptchaV3Provider('recaptcha-v3-site-key'),
     // Default provider for Android is the Play Integrity provider. You can use the "AndroidProvider" enum to choose
     // your preferred provider. Choose from:
     // 1. debug provider
@@ -23,19 +23,20 @@ void main() async {
   runApp(ClusteroidsApp());
 }
 
-
 class ClusteroidsApp extends StatelessWidget {
-  Color _primaryColor = HexColor('#DC54FE');
-  Color _accentColor = HexColor('#8A02AE');
+  final Color _primaryColor = HexColor('#DC54FE');
+  final Color _accentColor = HexColor('#8A02AE');
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Clustroids ',
-      theme: ThemeData(
-        primaryColor: _primaryColor,
-        accentColor: _accentColor,
+      theme: ThemeData.from(colorScheme: ColorScheme.light(
+        primary: _primaryColor,
+        secondary: _accentColor,
+      )).copyWith(
         scaffoldBackgroundColor: Colors.grey.shade100,
-        primarySwatch: Colors.grey,
+        // Optionally, you can set other theme properties here.
       ),
       home: LoginPage(),
     );

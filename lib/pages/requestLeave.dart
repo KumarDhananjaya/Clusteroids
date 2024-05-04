@@ -197,7 +197,7 @@ class _LeaveRequestPageState extends State<LeaveRequestPage> {
               data: Theme.of(context).copyWith(
                 elevatedButtonTheme: ElevatedButtonThemeData(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.purple, // Set the desired background color here
+                    backgroundColor: Colors.purple, // Set the desired background color here
                   ),
                 ),
               ),
